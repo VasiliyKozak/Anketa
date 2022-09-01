@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* * Звёздочка в CSS универсальный селектор. Распростроняется на весь документ{
+  padding: 0;
+  margin: 0;
+} */
+
+body {
+  background-color: rgb(201, 197, 208);
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+/* Стиль для добавления характеристик в тег «body» */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+/* Стиль для добавления характеристик в тег «a» */
+
+/*Тема: Стейты или псевдоселекторы */
+a:hover /* наведение */ {
+  text-decoration: underline;
+}
+/* Стиль для добавления специфических характеристик в тег «a». Используя псевдоселектор «:hover» */
+
+a:active/* активный */ {
+  color: blue;
+}
+/* Стиль для добавления специфических характеристик в тег «a». Используя псевдоселектор «:active» */
+
+a:visited /* посетил */ {
+  color: gray;
+}
+/* Стиль для добавления специфических характеристик в тег «a». Используя псевдоселектор «:visited» */
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 8px rgb(242 240 240);
+  margin-top: 25px;
+}
+/* Стиль для добавления характеристик в тег «img». */
+
+.info {
+  margin-bottom: 20px;
+  display: flex; /* flex (загиб) ВЫРАВНИВАЕТ БЛОКИ В РЯД (строчку)*/
+}
+/* Стиль для добавления характеристик в тег «div2». */
+.info-text {
+  margin-left: 40px;
+  margin-bottom: 0px;
+}
+.info-text h4 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.info-text > p {
+  color: #86898f;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  /* Стиль для добавления характеристик в тег «p». Используя уже включенный стиль «.info» в родительский блок «div», минуя добавление лишнего «class» в «p». */
+
+  /* text-transform: lowercase uppercase 
+    capitalize ;
+  letter-spacing: 5px;
+  word-spacing: 15px; */
+}
+.container {
+  max-width: 750px;
+  margin: auto;
+  /* background: rgb(70, 188, 215);
+  padding: 20px 15px 25px 30px;
+  border-left: 20px solid yellow;
+  border-left-style: groove;
+  border-top: 10px darkblue;
+  border-top-style: double;
+  border-right: 25px solid purple;
+  border-right-style: groove;
+  border-bottom: 20px rgb(171, 28, 66);
+  border-bottom-style: dotted; */
+}
+/* Стиль для добавления характеристик в тег «div1». */
+
+/* .social
+ {
+  background: rgb(20, 124, 86);
+  padding: 20px 15px 25px 30px;
+  border: 25px solid red;
+  border-bottom: 20px #ab1c42; 
+  border-bottom-style: dotted; 
+  border-left: 20px solid yellow; 
+  border-left-style: groove; 
+  border-top: 10px darkblue; 
+  border-top-style: double; 
+  border-right: 25px solid purple; 
+  border-right-style: groove; 
+  margin: 20px 15px 25px 20px;
+} */
+/* Стиль для добавления характеристик в тег «div3». */
+
+h1 {
+  color: rgb(29, 46, 177);
+}
+/* Стиль для добавления характеристик в тег «h1». */
+
+/* .box-model > div {
+  float: left; 
+  background: black;
+  height: 200px;
+  width: 25%;
+  border: 4px solid red; 
+  box-sizing: border-box; 
+}  */
+/* Стиль для добавления характеристик в дочерние теги «div». Минуя добавление «class» в каждый «div». */
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+/* Стиль для добавления одинаковых характеристик в разных «div». Добавляется в div через тип селектора «class» */
+
+.bg-gray {
+  background: #f5fffa;
+  margin: 5px 5px;
+  padding: 20px 20px;
+}
+.bg-yellow {
+  background: #fff9dc;
+}
+.bg-green {
+  background: #e5ffe7;
+}
+.bg-red {
+  background: #ffe5e5;
+}
+.bg-blue {
+  background: #e0ffff;
+}
+.bg-blue h2 {
+  text-align/*выравнивание по тексту*/: center;
+}
+/* Стили(5шт) для цветовых фонов в разных «div» */
+
+.card h2 {
+  margin-bottom: 10px;
+}
+/* Стиль для добавления характеристики в тег «h2». Используя уже включенный стиль «.card» в родительский блок «div», минуя добавление лишнего «class» в «h2». */
+
+.list {
+  padding: 0px 20px; /* Верх, низ = 0px, право, лево=20px*/
+  /* list-style: none; убирает перечень по цифрам */
+}
+/* Стиль для тега «ol» */
+
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+/* Стиль для добавления характеристик в тег «li». Используя уже включенный стиль «.list» в родительский блок «ol», минуя добавление лишнего «class» в «li». */
+
+.table {
+  width: 100%;
+}
+/* Стиль для тега «table» */
+
+.table td {
+  padding-bottom: 10px;
+}
+/*Стиль для добавления характеристик в тег «td». Используя уже включенный стиль «.table» в родительский блок «table», минуя добавление лишнего «class» в «td». */
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: #86898f;
+}
+/* Размещённые через запятую стили используют одинаковые характеристики.
+:nth-child (table таблица, td-table date данные таблицы, nth энный, child ребёнок)
+-псевдоселекторы, служат довольно специфическим целям. Помогают сократить избыточные классы в разметке. Всегда будут нацелены на указанные дочерние элементы.
+(2)(3) Порядковые номера стилизуемых столбцов
+Стиль для добавления характеристик в ВЫБОРОЧНЫЕ теги «td». Используя уже включенный стиль «.table» в родительский блок «table». Используя вместе с ним псевдоселектор «:nth-child()», минуя добавление лишних «class» в «td» */
+
+.table tr:nth-child(even) {
+  background: red;
+}
+/* Стиль для добавления характеристик в ВЫБОРОЧНЫЕ теги «tr». Используя уже включенный стиль «.table» в родительский блок «table». Используя вместе с ним псевдоселектор «:nth-child()», минуя добавление лишних «class» в «tr».
+(even чётный)(odd нечётный)*/
+
+.link-list {
+  list-style: square;
+}
+.link-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+.form-group label /*этикетка*/ {
+  display: block;
+  font-size: 14px;
+  color: gray;
+}
+.form-group input/*«input» (вводимые данные)*/, 
+.form-group textarea/*textarea (текстовая область). Размещённые через запятую стили используют одинаковые характеристики*/ {
+  width: 100%;
+  box-sizing: border-box;
+  border: none; /*Убрали границы «input»*/
+  background: transparent;
+  /* transparent (прозрачный).«input» слился с фоном.  */
+  border-bottom: 1px solid #ccc; /*Нижнюю границу «input» окрасили в цвет «#ccc» и задали размер. */
+  color: black; /* Цвет шрифта в момент введения данных */
+  padding: 15px 0 10px;
+  outline: none; /* outline(контур). Цвет контура «input» в момент введения данных*/
+  font-family: inherit;
+  /* font-family (семейство шрифтов)inherit (наследовать). Наследует внешние шрифты */
+}
+.row /* ряд, шеренга. «row» */ {
+  display: flex; /* flex (сгибать). ВЫСТРАЕВАЕТ БЛОКИ В РЯД. */
+  margin-bottom: 20px;
+}
+.row > .form-group /* Задаёт размер каждому блоку «div», включенных в этот «div», имеющих «class="form-group"» */ {
+  width: 50%;
+  margin-right: 20px; /* «margin» это расстояние от «border» до контура «div». Не отображается на веб-странице. Присвоенный размер увеличивает «margin» и на веб-странице появляется разрыв сплошной линии между блоками. */
+}
+
+.btn {
+  background: black;
+  padding: 15px 20px;
+  color: white;
+  font-family: inherit; /* inherit (наследовать). Наследует внешние шрифты. */
+  cursor: pointer; /* pointer (указатель). При наведении курсор изменяется на указатель. */
+  border: none;
+}
+.btn:hover {
+  opacity: 0.9; /*opacity (непрозрачность)*/
+}
+/* ТЕМА: Position */
+
+.position {
+  margin-top: 40px;
+  border: 4px solid black;
+  padding: 20px;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background: lightcoral;
+}

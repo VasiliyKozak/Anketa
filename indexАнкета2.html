@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vasiliy Kozak</title>
+    <link rel="stylesheet" href="stylesАнкета2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="IMG.jpg" alt="VK" class="avatar" />
+        <div class="info-text">
+          <h1>Василий Козак</h1>
+          <p>Я основатель одноименного <strong>Youtube канала</strong></p>
+          <p>Я люблю путешестовать, заниматься спортом и программировать</p>
+          <div class="card bg-gray">
+            <h4>Мой сайт</h4>
+            <a href="https://peppy-pithivier-565fb3.netlify.app/" target="_blank"
+              >VK</a
+            >
+            |
+            <a target="_blank" href="https://ok.ru/">Однокласники</a>
+          </div>
+        </div>
+      </div>
+    <div class="card bg-yellow">
+      <h2>Мои хобби</h2>
+      <ol class="list">
+        <!-- Тег <ol> (ordered list — упорядоченный список) устанавливает нумерованный (упорядоченный) список.
+    Каждый элемент списка должен начинаться с <li>. Если к <ol> применяется таблица стилей, то элементы <li> наследуют эти свойства. -->
+        <li>Блоггер</li>
+        <li>Быстрая езда на машинах</li>
+        <li>Спорт: Бег</li>
+        <li>Путешествия</li>
+      </ol>
+    </div>
+    <div class="card bg-green">
+      <h2>Опыт работы</h2>
+      <table class="table">
+        <tr>
+          <!-- Тег <tr> (table row — строка таблицы) служит контейнером для создания строки таблицы.Каждая ячейка в пределах такой строки устанавливается с помощью элемента <th> или <td>. -->
+          <td>LPT racker</td>
+          <!-- Тег <td> (table data — данные таблицы) предназначен для создания одной ячейки таблицы.Элемент <td> должен размещаться внутри контейнера <tr>, который в свою очередь располагается внутри <table>. -->
+          <td>Frontend</td>
+          <td>2015-2016</td>
+        </tr>
+        <tr>
+          <td>EPAM</td>
+          <td>Software Engineer</td>
+          <td>2016 - 2017</td>
+        </tr>
+        <tr>
+          <td>Software Outsorcing Services</td>
+          <td>Lead Frontend</td>
+          <td>2017 - 2019</td>
+        </tr>
+        <tr>
+          <td>Youtube</td>
+          <td>Blogger</td>
+          <td>2019-now</td>
+        </tr>
+      </table>
+    </div>
+    <div class="card bg-red">
+      <h2>Youtube Курсы</h2>
+      <ul class="link-list">
+        <li>
+          <a href="https://www.youtube.com/watch?v=W4MIiV4nZDY&t=6147s"
+            >HTML - Полный Курс HTML Для Начинающих [3 ЧАСА]</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=CxgOKJh4zWE&list=RDCMUCiyasqPIZz8zzbJp7-17dJw&index=1"
+            >JavaScript - Полный Курс Для Начинающих [11 ЧАСОВ]</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="card bg-blue">
+      <h2>Связаться со мной</h2>
+      <form action="/">
+        <!-- Тег <form> (form - форма) устанавливает форму на веб-странице.Форма предназначена для обмена данными между пользователем и сервером. Область применения форм не ограничена отправкой данных на сервер, с помощью клиентских скриптов можно получить доступ к любому элементу формы, изменять его и применять по своему усмотрению. 
+            action (действие) -->
+        <div class="row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <!-- Тег <label> (label — метка, ярлык) устанавливает связь между определённой меткой, в качестве которой обычно выступает текст, и элементом формы (<input>, <select>, <textarea>). -->
+            <input type="text" id="name" placeholder="Введите ваше имя..." />
+          </div>
+          <!-- Тег <input> (input — ввод) является одним из разносторонних элементов формы и позволяет создавать разные части интерфейса и обеспечивать взаимодействие с пользователем.Главным образом <input> предназначен для создания текстовых полей, различных кнопок, переключателей и флажков
+              id (идентификатор) 
+              placeholder (заполнитель)
+              -->
+          <!-- <br /> -->
+          <!-- Тег <br> (break - разрыв) устанавливает перевод строки в том месте, где он находится.В отличие от элемента <p>, использование <br> не добавляет пустой отступ перед строкой -->
+          <div class="form-group">
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" placeholder="Введите email..." />
+          </div>
+        </div>
+        <!-- <br /> -->
+        <div class="form-group">
+          <label for="text">Вашe сообщение:</label>
+          <!-- <br /> -->
+          <textarea id="text" rows="2" cols="15"></textarea>
+        </div>
+        <!-- <br /> -->
+
+        <input class="btn" type="submit" value="Связаться!" />
+        <!--input (вводимые данные),submit (представить) value (ценность) -->
+      </form>
+      <!-- <div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div style="margin-bottom: 500px"></div> -->
+      <div class="position">
+        <div class="box">
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
