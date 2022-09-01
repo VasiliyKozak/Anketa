@@ -249,3 +249,17 @@ h1 {
   height: 50px;
   background: lightcoral;
 }
+.head__title {
+  position: absolute;
+  left: 256px;
+  bottom: 54px;
+  width: 221px;
+  height: 118px;
+  /* background: url(../images/title.png) no-repeat; */
+  background-size: cover;
+}
+.box1 {
+  width: 50px;
+  height: 50px;
+  background: lightcoral;
+}
