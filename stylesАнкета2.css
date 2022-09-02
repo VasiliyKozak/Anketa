@@ -36,6 +36,7 @@ a:visited /* посетил */ {
 
 .avatar {
   width: 200px;
+  height: 200px;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 8px rgb(242 240 240);
   margin-top: 25px;
@@ -83,9 +84,21 @@ a:visited /* посетил */ {
   border-right-style: groove;
   border-bottom: 20px rgb(171, 28, 66);
   border-bottom-style: dotted; */
-}
-/* Стиль для добавления характеристик в тег «div1». */
 
+  /* Стиль для добавления характеристик в тег «div1». */
+}
+.container1 {
+  margin: 20px 0px;
+}
+.csssr {
+  margin: 33px 20.5px 33px 0px;
+}
+.delo {
+  margin: auto;
+}
+.sekret {
+  margin: 6px 0px 6px 25.6px;
+}
 /* .social
  {
   background: rgb(20, 124, 86);
@@ -185,10 +198,13 @@ h1 {
 Стиль для добавления характеристик в ВЫБОРОЧНЫЕ теги «td». Используя уже включенный стиль «.table» в родительский блок «table». Используя вместе с ним псевдоселектор «:nth-child()», минуя добавление лишних «class» в «td» */
 
 .table tr:nth-child(even) {
-  background: red;
+  background: rgb(101, 193, 146);
 }
 /* Стиль для добавления характеристик в ВЫБОРОЧНЫЕ теги «tr». Используя уже включенный стиль «.table» в родительский блок «table». Используя вместе с ним псевдоселектор «:nth-child()», минуя добавление лишних «class» в «tr».
 (even чётный)(odd нечётный)*/
+.table tr:nth-child(odd) {
+  background: #1ce0e0;
+}
 
 .link-list {
   list-style: square;
@@ -241,24 +257,11 @@ h1 {
 
 .position {
   margin-top: 40px;
-  border: 4px solid black;
+  border: 4px solid black; /*solid (сплошной). Придаёт границе «div» видимость на веб-странице.*/
   padding: 20px;
 }
 .box {
-  width: 50px;
-  height: 50px;
-  background: lightcoral;
-}
-.head__title {
-  position: absolute;
-  left: 256px;
-  bottom: 54px;
-  width: 221px;
-  height: 118px;
-  /* background: url(../images/title.png) no-repeat; */
-  background-size: cover;
-}
-.box1 {
+  position: static; /*(static (статический) по умолчанию, элемент закреплён. absolute (абсолютный) придаёт независимость от родительского тега */
   width: 50px;
   height: 50px;
   background: lightcoral;
